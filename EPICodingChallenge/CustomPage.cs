@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using EPICodingChallenge.Models;
 using EPICodingChallenge.Models.Pages;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
@@ -13,6 +14,7 @@ namespace EPICodingChallenge
         DisplayName = "Custom Page", 
         GUID = "025e35bb-0f00-40b7-884e-20d8131c8dc1", 
         Description = "Custom homework page")]
+    [SiteImageUrl(Global.StaticGraphicsFolderPath + "ATB-official-logo.png")]
     public class CustomPage : SitePageData
     {
         /*

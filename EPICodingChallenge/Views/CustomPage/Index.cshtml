@@ -1,0 +1,70 @@
+﻿@using EPICodingChallenge
+@using System.Web.Optimization
+
+@model PageViewModel<CustomPage>
+
+@{
+    Layout = "~/Views/Shared/Layouts/_Root.cshtml";
+}
+
+<html>
+<head>
+</head>
+<body>
+    <section class="custom-page-section" style="margin:30px">
+        <div>
+            @Html.PropertyFor(x => x.CurrentPage.Heading)
+        </div>
+    </section>
+
+    <section class="custom-page-section" style="margin:30px">
+        <div>
+            @Html.PropertyFor(x => x.CurrentPage.Image)
+        </div>
+    </section>
+    <section class="custom-page-section" style="margin:30px">
+        <div>
+            @Html.PropertyFor(x => x.CurrentPage.MainBody)
+        </div>
+    </section>
+    <section class="custom-page-section" style="margin:30px">
+        <table style="width:100%;border: 2px solid black;background-color:aliceblue;text-align: center;">
+            <tr style="border-bottom: 1px solid black;font-size:20px;padding:10px">
+                <td>Label</td>
+                <td>Value</td>
+            </tr>
+            @if (Model.CurrentPage.Table1Items.Count > 0)
+            {
+                foreach (var item in Model.CurrentPage.Table1Items)
+                {
+                    <tr>
+                        <th>@item.Name</th>
+                        <th>@item.Value</th>
+                    </tr>
+                }
+            }
+        </table>
+    </section>
+    <section class="custom-page-section" style="margin:30px">
+        <table style="width:100%;border: 2px solid black;background-color:aliceblue;text-align: center;">
+            <tr style="border-bottom: 1px solid black;font-size:20px;padding:10px">
+                <td>Label</td>
+                <td>Value</td>
+                <td>Image</td>
+            </tr>
+            @if (Model.CurrentPage.Table2Items.Count > 0)
+            {
+                foreach (var item in Model.CurrentPage.Table2Items)
+                {
+                    <tr>
+                        <th>@item.Name</th>
+                        <th>@item.Value</th>
+                        <th>@item.Image</th>
+                    </tr>
+                }
+            }
+        </table>
+    </section>
+</body>
+</html>
+

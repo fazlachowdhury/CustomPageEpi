@@ -26,6 +26,7 @@ namespace EPICodingChallenge.Business.Initialization
                 .Include("~/Static/css/bootstrap.css", new CssRewriteUrlTransform())
                 .Include("~/Static/css/bootstrap-responsive.css")
                 .Include("~/Static/css/media.css")
+                .Include("~/Static/css/CustomPageStyle.css")
                 .Include("~/Static/css/style.css", new CssRewriteUrlTransform())
                 .Include("~/Static/css/editmode.css"));
         }

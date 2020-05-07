@@ -20,9 +20,6 @@ namespace EPICodingChallenge
             // Add CMS integration for ASP.NET Identity
             app.AddCmsAspNetIdentity<ApplicationUser>();
 
-            // Remove to block registration of administrators
-            app.UseAdministratorRegistrationPage(() => HttpContext.Current.Request.IsLocal);
-
             // Use cookie authentication
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {

@@ -30,7 +30,7 @@ namespace EPICodingChallenge
             Description = "Header of the page, using the XHTML-editor you can insert for example text, images and tables.",
             GroupName = SystemTabNames.Content,
             Order = 1)]
-        public virtual XhtmlString Heading { get; set; }
+        public virtual string Heading { get; set; }
 
         [Required]
         [Display(

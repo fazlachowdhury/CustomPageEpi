@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using EPICodingChallenge.Models;
 using EPICodingChallenge.Models.Pages;
+using EPICodingChallenge.Models.Properties;
+using EPiServer.Cms.Shell.UI.ObjectEditing.EditorDescriptors;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using EPiServer.Shell.ObjectEditing;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
 
@@ -27,7 +32,12 @@ namespace EPICodingChallenge
             Order = 1)]
         public virtual XhtmlString Heading { get; set; }
 
-        [Display(GroupName = Global.GroupNames.Custom)]
+        [Required]
+        [Display(
+            Name = "Large Image related to topic", 
+            Description = "To upload image related to page topic",
+            GroupName = Global.GroupNames.Custom,
+            Order = 2)]
         [UIHint(UIHint.Image)]
         public virtual ContentReference Image { get; set; }
 
@@ -37,8 +47,24 @@ namespace EPICodingChallenge
             Name = "Main body",
             Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
             GroupName = SystemTabNames.Content,
-            Order = 10)]
+            Order = 3)]
         public virtual XhtmlString MainBody { get; set; }
+
+        [Required]
+        [Display(
+            Name = "First table",
+            Order = 4)]
+        [EditorDescriptor(
+            EditorDescriptorType = typeof(CollectionEditorDescriptor<CustomTableItem>))]
+        public virtual IList<CustomTableItem> Table1Items { get; set; }
+
+        [Required]
+        [Display(
+            Name = "Second table",
+            Order = 5)]
+        [EditorDescriptor(
+            EditorDescriptorType = typeof(CollectionEditorDescriptor<CustomTableItem2>))]
+        public virtual IList<CustomTableItem2> Table2Items { get; set; }
 
     }
 }

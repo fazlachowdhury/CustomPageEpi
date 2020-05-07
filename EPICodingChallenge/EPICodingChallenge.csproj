@@ -379,6 +379,10 @@
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\Properties\CustomTableItem.cs" />
+    <Compile Include="Models\Properties\CustomTableItem2.cs" />
+    <Compile Include="Models\Properties\PropertyCustomTableItem2List.cs" />
+    <Compile Include="Models\Properties\PropertyCustomTableItemList.cs" />
     <Compile Include="Models\Properties\PropertyStringList.cs" />
     <Compile Include="Models\Register\RegisterViewModel.cs" />
     <Compile Include="Models\SiteContentType.cs" />

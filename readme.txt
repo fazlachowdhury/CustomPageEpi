@@ -16,6 +16,7 @@ Problems faces:
 	    "No owen.environment was found in context" error. Tried restarting, resetting to previous change, no luck. Finally it started working when i updated
 	    Web.config file and added defaultLanguage="c#" to <compilation/>.
 	# I added inline CSS styling. To make it more consistent, i created a CSS file and added to BundleConfig.cs. But when i tried to render it in view, it didn't work.
-	  tried adding it to root layout and adding that layout to view (view did not have any layout before). Still no luck. Need further investigation.
+	  tried adding it to root layout and adding that layout to view (view did not have any layout before). Still no luck. It Finally started working after cleaning and 
+	  rebuilding the solution. It's showing correct Style in Debugging / IIS express process. But for some reason, Start without debugging is still not picking up the CSS file.
 
 			

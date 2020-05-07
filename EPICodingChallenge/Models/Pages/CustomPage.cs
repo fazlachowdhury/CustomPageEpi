@@ -13,12 +13,12 @@ using EPiServer.Shell.ObjectEditing;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
 
-namespace EPICodingChallenge
+namespace EPICodingChallenge.Models.Pages
 {
     [ContentType(
         GroupName = Global.GroupNames.Custom,
         DisplayName = "Custom Page",
-        GUID = "61ce81e8-16db-4d16-b177-9f743e3c15fd",
+        GUID = "e7d669ad-7247-42dd-8bef-f0400878e2bf",
         Description = "Custom homework page")]
     [SiteImageUrl(Global.StaticGraphicsFolderPath + "ATB-official-logo.png")]
     public class CustomPage : SitePageData
@@ -34,7 +34,7 @@ namespace EPICodingChallenge
 
         [Required]
         [Display(
-            Name = "Large Image related to topic", 
+            Name = "Large Image related to topic",
             Description = "To upload image related to page topic",
             GroupName = Global.GroupNames.Custom,
             Order = 2)]

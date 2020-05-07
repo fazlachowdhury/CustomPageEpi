@@ -420,6 +420,7 @@
     <Content Include="Static\css\bootstrap-collapse.js" />
     <Content Include="Static\css\bootstrap-responsive.css" />
     <Content Include="Static\css\bootstrap.css" />
+    <Content Include="Static\css\CustomPageStyle.css" />
     <Content Include="Static\css\editmode.css" />
     <Content Include="Static\css\editor.css" />
     <Content Include="Static\css\media.css" />

@@ -11,25 +11,25 @@
 <head>
 </head>
 <body>
-    <section class="custom-page-section" style="margin:30px">
+    <section class="custom-page-section">
         <div>
             @Html.PropertyFor(x => x.CurrentPage.Heading)
         </div>
     </section>
 
-    <section class="custom-page-section" style="margin:30px">
+    <section class="custom-page-section">
         <div>
             @Html.PropertyFor(x => x.CurrentPage.Image)
         </div>
     </section>
-    <section class="custom-page-section" style="margin:30px">
+    <section class="custom-page-section">
         <div>
             @Html.PropertyFor(x => x.CurrentPage.MainBody)
         </div>
     </section>
-    <section class="custom-page-section" style="margin:30px">
-        <table style="width:100%;border: 2px solid black;background-color:aliceblue;text-align: center;">
-            <tr style="border-bottom: 1px solid black;font-size:20px;padding:10px">
+    <section class="custom-page-section">
+        <table class="custom-page-table">
+            <tr class ="custom-table-header">
                 <td>Label</td>
                 <td>Value</td>
             </tr>
@@ -45,9 +45,9 @@
             }
         </table>
     </section>
-    <section class="custom-page-section" style="margin:30px">
-        <table style="width:100%;border: 2px solid black;background-color:aliceblue;text-align: center;">
-            <tr style="border-bottom: 1px solid black;font-size:20px;padding:10px">
+    <section class="custom-page-section">
+        <table class="custom-page-table">
+            <tr class ="custom-table-header">
                 <td>Label</td>
                 <td>Value</td>
                 <td>Image</td>

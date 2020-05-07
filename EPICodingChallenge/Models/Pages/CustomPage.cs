@@ -17,7 +17,7 @@ namespace EPICodingChallenge.Models.Pages
 {
     [ContentType(
         GroupName = Global.GroupNames.Custom,
-        DisplayName = "Custom Page",
+        DisplayName = "Homework Page",
         GUID = "e7d669ad-7247-42dd-8bef-f0400878e2bf",
         Description = "Custom homework page")]
     [SiteImageUrl(Global.StaticGraphicsFolderPath + "ATB-official-logo.png")]

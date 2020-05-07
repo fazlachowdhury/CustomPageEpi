@@ -1,6 +1,7 @@
-To Run:
-	1. A Custom page has already been added (and populated) to Top Menu and Footer. Can redirect using the link. 
-	2. To create a new page of Homework Page type:
+To Run using Visual Studio:
+	1. Clone the repo and start the project. 
+	2. A Custom page has already been added (and populated) to Top Menu and Footer. Can redirect using the link. 
+	3. To create a new page of Homework Page type:
 		Please Choose Add "New Page" in Navigation pane. Scrool down to "Custom" page group. Choose homework page.
 User Acounts:
 	1. Admin (Belongs to CmsAdmin virtual group)- Username: Admin, pass: Admin-123789

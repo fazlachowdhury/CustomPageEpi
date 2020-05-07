@@ -1,0 +1,13 @@
+﻿@using EPICodingChallenge
+@model PageViewModel<CustomPage>
+
+
+<section>
+    @Html.PropertyFor(x => x.CurrentPage.Heading)
+</section>
+<section>
+    @Html.PropertyFor(x => x.CurrentPage.Image)
+</section>
+<section>
+    @Html.PropertyFor(x => x.CurrentPage.MainBody)
+</section>

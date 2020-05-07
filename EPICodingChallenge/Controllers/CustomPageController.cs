@@ -10,7 +10,7 @@ using EPICodingChallenge.Models.ViewModels;
 
 namespace EPICodingChallenge.Controllers
 {
-    public class CustomePageController : PageControllerBase<CustomPage>
+    public class CustomPageController : PageControllerBase<CustomPage>
     {
         public ActionResult Index(CustomPage currentPage)
         {
